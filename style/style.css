@@ -1,0 +1,130 @@
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  overflow: auto;
+  
+}
+section[role="region"] > header:first-child{
+position:fixed!important;
+width:100%;
+top:0;
+}
+section[role="region"] > header {
+position:fixed!important;
+width:100%;
+top:5rem;
+background-color:white;
+z-index:30!important;
+}
+section[data-type="list"]{
+margin-top:9rem;
+
+}
+form{
+margin:1rem auto;
+}
+section[data-type="list"]{
+font-family:'sahlnaskh';
+}
+#readInside{
+font-family:'sahlnaskh';
+font-weight:normal;
+font-size:1.5rem;
+color:#4e4f54;
+line-height:2rem;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+margin-top:9rem;
+margin-bottom:1rem;
+display:block;
+}
+#readInside img{
+width:99%; 
+height:99%;
+margin:auto;
+display:block;
+margin:1rem 0;
+}
+#readInside a{
+
+text-decoration: none;
+}
+@keyframes openApp {
+0% { transform: translateX(-100%); -webkit-transform: translateX(-100%); opacity: 1; }
+100% { transform: translateX(0%); -webkit-transform: translateX(0%); opacity: 1; }
+}
+@keyframes closeApp {
+0% { transform: translateX(0%); -webkit-transform: translateX(0%); opacity: 1; }
+100% { transform: translateX(-100%); -webit-transform: translateX(-100%); opacity: 1; }
+}
+.OpenPostAnim{
+animation: openApp 0.3s forwards ease;
+-webkit-animation: openApp 0.3s forwards ease;
+}
+.ClosePostAnim{
+-webkit-animation:closeApp 0.9s forwards ease;
+animation:closeApp 0.9s forwards ease;
+}
+.post{
+display:block;
+position:absolute!important;
+right:0;
+top:0;
+z-index:3;
+width:100%;
+min-height:100%;
+background-color:white;
+}
+.main{
+display:block;
+position:absolute!important;
+right:0px;
+top:0px;
+z-index:1;
+width:100%;
+background-color:white;
+}
+.addComment{
+display:block;
+position:absolute!important;
+right:0;
+top:0;
+z-index:4;
+width:100%;
+min-height:100%;
+background-color:white;
+}
+.addCommentButtonSection{
+font-family:'sahlnaskh';
+width:90%;
+margin:1rem auto;
+}
+#loading{
+font-size:1.5rem;
+}
+#space{
+height: 4rem;
+display:block;
+}
+video{
+width:99%;
+height:99%;
+display:block;
+}
+section[role="region"] > header:first-child .icon.icon-refresh {
+  background-image: url(../images/refresh.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#comment_success,
+#comment_failed{
+display:none;
+visibility:hidden;
+font-size:1.5rem;
+}
+#comment_success{color:#376DB6;}
+#comment_failed{color:#B13127;}
